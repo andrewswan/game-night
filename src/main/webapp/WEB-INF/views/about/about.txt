@@ -1,0 +1,29 @@
+<h3>What?</h3>
+This site allows you to:
+* Find board gaming groups near you that play the kind of games you like.
+* Arrange and attend sessions at a time that suits you.
+* Agree ahead of time what games to play.
+* Track important details such as:
+** Who's coming, when, and with what degree of certainty
+** Venue details (address, phone number, parking, etc.)
+
+In the future it might be enhanced to let you:
+* Keep a record of your gaming sessions (and results too, if desired)
+* Send session detail to BoardGameGeek for logging
+
+<h3>Why?</h3>
+I'm a board gamer and a dad. I developed this site because I want to extract the
+greatest possible enjoyment from my limited gaming time. I've always had regular
+gaming partners and groups, but sometimes the important question of what to play
+is left until the last moment, and often resolved in a fairly arbitrary way.
+Planning what to play in advance means that:
+* Players can learn or brush up on the rules beforehand, so that the game can
+  start more quickly.
+* Players who know the rules can brush up on their strategies so that they don't
+  keep learning the same lessons all over again each time they play (a
+  particular problem for the less frequently played games).
+* People can bring exactly the right games to a session, saving effort and
+  preventing disappointment.
+* Gamers can read up on a proposed game in advance to see if it's their sort of
+  game, rather than being swayed by the box cover or other people's opinions.
+* No gaming time wasted deciding what to play!  

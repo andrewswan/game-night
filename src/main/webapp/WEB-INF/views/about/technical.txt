@@ -1,0 +1,13 @@
+<h3>Why OpenID?</h3>
+Using OpenID for logging into this site means that users:
+* Don't have to remember yet another username and password (assuming they
+  already have an OpenID, which you do if you have an account with Google,
+  Yahoo, AOL, Blogger, etc.).
+* Aren't tempted to reuse their existing username and/or password from some
+  other web site, which can be risky if either site is not totally secure. 
+* Can choose an OpenID provider that meets their own security criteria, so if
+  you want to protect your identity with both a password and a SecureID tag,
+  you can do this by choosing an OpenID provider that supports that feature.
+* Benefit because this site's developers can concentrate on adding useful
+  gaming-related features rather than implementing and maintaining
+  security-related features such as changing and resetting of passwords.  

@@ -1,0 +1,42 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.person" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty person}">
+            <div id="roo_person_name">
+                <label for="_name_id">Name:</label>
+                <div class="box" id="_name_id">
+                    <c:out value="${person.name}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_person_openID">
+                <label for="_openID_id">Open I D:</label>
+                <div class="box" id="_openID_id">
+                    <c:out value="${person.openID}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_person_dateRegistered">
+                <label for="_dateRegistered_id">Date Registered:</label>
+                <div class="box" id="_dateRegistered_id">
+                    <fmt:formatDate pattern="${person_dateRegistered_date_format}" value="${person.dateRegistered}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_person_memberships">
+                <label for="_memberships_id">Memberships:</label>
+                <div class="box" id="_memberships_id">
+                    <c:out value="${person.memberships}"/>
+                </div>
+            </div>
+            <br/>
+        </c:if>
+        <c:if test="${empty person}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>

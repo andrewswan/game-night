@@ -1,0 +1,76 @@
+body {
+	background-color: #336699;	/* blue */
+}
+
+/* --------------------------------- Header --------------------------------- */
+
+div#header {
+	/* URLs are relative to the CSS file */
+	background-image: url('../images/banner.jpg');
+	color: #dddddd;
+}
+
+div#header span {
+	margin: 10px;
+}
+
+div#banner {
+	font-size: xx-large;
+}
+
+div#banner a:link {
+	color: #dddddd;
+	text-decoration: none;
+}
+
+div#banner a:visited {
+	color: #dddddd;
+	text-decoration: none;
+}
+
+div#login {
+	font-size: small;
+	text-align: right;
+}
+
+div#login a:link {
+	color: #dddddd;
+}
+
+div#login a:visited {
+	color: #dddddd;
+}
+
+/* --------------------------------- Middle --------------------------------- */
+
+div#middle {
+	background-color: #aaaaaa;	/* mid grey */
+}
+
+div#mainNav > ul {
+	padding-top: 10px;
+}
+
+div#page {
+	background-color: #dddddd;	/* light grey */
+}
+
+div#page > p {
+	padding: 10px;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+div#footer {
+	background-color: #666666;	/* dark grey */
+	color: #aaaaaa;
+	font-size: smaller;
+}
+
+div#footer span {
+	padding: 8px;
+}
+
+div#footerCredits {
+	text-align: right;
+}

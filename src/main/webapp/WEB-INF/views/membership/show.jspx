@@ -1,0 +1,49 @@
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <script type="text/javascript">dojo.require('dijit.TitlePane');</script>
+    <div id="_title_div">
+        <spring:message code="label.membership" var="entity_label"/>
+        <spring:message arguments="${entity_label}" code="entity.show" var="title_msg"/>
+        <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_title_div', widgetType : 'dijit.TitlePane', widgetAttrs : {title: '${title_msg}'}})); </script>
+        <c:if test="${not empty membership}">
+            <div id="roo_membership_person">
+                <label for="_person_id">Person:</label>
+                <div class="box" id="_person_id">
+                    <c:out value="${membership.person}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_membership_club">
+                <label for="_club_id">Club:</label>
+                <div class="box" id="_club_id">
+                    <c:out value="${membership.club}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_membership_dateFrom">
+                <label for="_dateFrom_id">Date From:</label>
+                <div class="box" id="_dateFrom_id">
+                    <fmt:formatDate pattern="${membership_dateFrom_date_format}" value="${membership.dateFrom}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_membership_dateTo">
+                <label for="_dateTo_id">Date To:</label>
+                <div class="box" id="_dateTo_id">
+                    <fmt:formatDate pattern="${membership_dateTo_date_format}" value="${membership.dateTo}"/>
+                </div>
+            </div>
+            <br/>
+            <div id="roo_membership_manager">
+                <label for="_manager_id">Manager:</label>
+                <div class="box" id="_manager_id">
+                    <c:out value="${membership.manager}"/>
+                </div>
+            </div>
+            <br/>
+        </c:if>
+        <c:if test="${empty membership}">
+            <spring:message arguments="${entity_label}" code="entity.not.found.single"/>
+        </c:if>
+    </div>
+</div>
